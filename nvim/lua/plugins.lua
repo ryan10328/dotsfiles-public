@@ -31,7 +31,6 @@ packer.startup(function(use)
   use "hrsh7th/nvim-cmp"
   use "jose-elias-alvarez/null-ls.nvim"
   use "MunifTanjim/prettier.nvim"
-  use "glepnir/lspsaga.nvim"
   use "L3MON4D3/LuaSnip"
 
   use {
@@ -42,6 +41,11 @@ packer.startup(function(use)
   use "windwp/nvim-autopairs"
   use "windwp/nvim-ts-autotag"
   use "onsails/lspkind.nvim"
+  use "nvim-telescope/telescope.nvim"
+  use "nvim-telescope/telescope-file-browser.nvim"
+  use "nvim-lua/plenary.nvim" -- dependency of the telescope
+  use "akinsho/nvim-bufferline.lua"
+  use "norcalli/nvim-colorizer.lua"
 
   if is_bootstrap then
     require('packer').sync()

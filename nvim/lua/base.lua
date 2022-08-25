@@ -1,3 +1,5 @@
+local util = require('util')
+
 vim.cmd('autocmd!')
 
 vim.scriptencoding = 'utf-8'
@@ -17,7 +19,11 @@ vim.opt.cmdheight = 1
 vim.opt.laststatus = 2
 vim.opt.expandtab = true
 vim.opt.scrolloff = 10
-vim.opt.shell = 'pwsh'
+
+if util.is_win() then
+  vim.opt.shell = 'pwsh'
+end
+
 -- search result will appear in a split window
 vim.opt.inccommand = 'split'
 vim.opt.ignorecase = true

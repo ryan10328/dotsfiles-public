@@ -1,6 +1,5 @@
 local status, nvim_lsp = pcall(require, 'lspconfig')
 
-
 if (not status) then return end
 
 local protocol = require('vim.lsp.protocol')
@@ -79,11 +78,13 @@ nvim_lsp.tsserver.setup {
   cmd = { "typescript-language-server", "--stdio" }
 }
 
+
 nvim_lsp.volar.setup {
   on_attach = on_attach,
   filetypes = { "vue" },
   cmd = { "volar-server", "--stdio" }
 }
+
 
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
   vim.lsp.diagnostic.on_publish_diagnostics, {
