@@ -2,6 +2,7 @@ require('base')
 require('highlights')
 require('maps')
 require('plugins')
+require('coc')
 
 -- utility functions
 local util = require('util')

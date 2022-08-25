@@ -10,7 +10,7 @@ local is_bootstrap = false
 
 if vim.fn.empty(vim.fn.glob(install_path)) > 0 then
   is_bootstrap = true
-  vim.fn.execute('!git clone https://github.com/wbthomason/packer.nvim'.. install_path)
+  vim.fn.execute('!git clone https://github.com/wbthomason/packer.nvim' .. install_path)
   vim.cmd [[packadd packer.nvim]]
 end
 
@@ -21,15 +21,6 @@ packer.startup(function(use)
     "nvim-lualine/lualine.nvim",
     requires = { "kyazdani42/nvim-web-devicons", opt = true }
   }
-  use {
-    "williamboman/mason.nvim",
-    "williamboman/mason-lspconfig.nvim",
-    "neovim/nvim-lspconfig"
-  }
-  use "hrsh7th/cmp-buffer"
-  use "hrsh7th/cmp-nvim-lsp"
-  use "hrsh7th/nvim-cmp"
-  use "jose-elias-alvarez/null-ls.nvim"
   use "MunifTanjim/prettier.nvim"
   use "L3MON4D3/LuaSnip"
 
@@ -40,12 +31,15 @@ packer.startup(function(use)
 
   use "windwp/nvim-autopairs"
   use "windwp/nvim-ts-autotag"
-  use "onsails/lspkind.nvim"
   use "nvim-telescope/telescope.nvim"
   use "nvim-telescope/telescope-file-browser.nvim"
   use "nvim-lua/plenary.nvim" -- dependency of the telescope
   use "akinsho/nvim-bufferline.lua"
   use "norcalli/nvim-colorizer.lua"
+  use {
+    "neoclide/coc.nvim",
+    branch = "release"
+  }
 
   if is_bootstrap then
     require('packer').sync()
