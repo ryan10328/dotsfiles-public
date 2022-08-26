@@ -29,7 +29,6 @@ packer.startup(function(use)
     run = ":TSUpdate"
   }
 
-  use "windwp/nvim-autopairs"
   use "windwp/nvim-ts-autotag"
   use "nvim-telescope/telescope.nvim"
   use "nvim-telescope/telescope-file-browser.nvim"

@@ -1,6 +1,9 @@
 # Created by https://www.toptal.com/developers/gitignore/api/lua,vim,powershell,visualstudiocode
 # Edit at https://www.toptal.com/developers/gitignore?templates=lua,vim,powershell,visualstudiocode
 
+### macOS ###
+.DS_Store
+
 ### Lua ###
 # Compiled Lua sources
 luac.out
