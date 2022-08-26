@@ -10,7 +10,5 @@ vim.cmd [[
   inoremap <silent><expr> <CR>  coc#pum#visible() ? coc#_select_confirm() : "\<C-g>u\<CR>"
 ]]
 
-
 -- prettier remap
 vim.api.nvim_set_keymap("n", "<space>f", ":CocCommand prettier.formatFile<CR>", { noremap = true })
-
