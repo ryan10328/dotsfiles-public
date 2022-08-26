@@ -13,12 +13,16 @@ telescope.setup {
   defaults = {
     mappings = {
       n = {
-        ["q"] = actions.close
+        ["q"] = actions.close,
+        -- exchange the keymap between the select_tab (open file in new buffer) & select_default (open file in current buffer)
+        ["<CR>"] = actions.select_tab,
+        ["<C-t>"] = actions.select_default,
       },
     },
     file_ignore_patterns = {
       "node_modules",
-      ".git"
+      ".git",
+      ".idea"
     }
   },
   extensions = {

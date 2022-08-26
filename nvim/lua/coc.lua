@@ -11,4 +11,6 @@ vim.cmd [[
 ]]
 
 -- prettier remap
-vim.api.nvim_set_keymap("n", "<space>f", ":CocCommand prettier.formatFile<CR>", { noremap = true })
+vim.api.nvim_set_keymap("v", "<space>f", "<Plug>(coc-format-selected)", {})
+vim.api.nvim_set_keymap("n", "<space>f", "<Plug>(coc-format-selected)", {})
+vim.api.nvim_set_keymap("n", ",f", ":CocCommand prettier.formatFile<CR>", { noremap = true })

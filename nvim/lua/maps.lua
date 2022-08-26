@@ -18,6 +18,10 @@ keymap.set('n', 'te', ':tabedit<Return>', { silent = true })
 keymap.set('n', 'ss', ':split<Return><C-w>w',{ silent = true })
 keymap.set('n', 'sv', ':vsplit<Return><C-w>w', { silent = true })
 
+-- remap line visual mode & block visual mode to Ctrl+b & Shift+b
+keymap.set('n', '<C-b>', '<C-v>')
+keymap.set('n', '<S-b>', '<S-v>')
+
 -- move window
 keymap.set('n', '<Space>', '<C-w>w')
 keymap.set('', '<C-h>', '<C-w>h')
