@@ -40,6 +40,7 @@ packer.startup(function(use)
     branch = "release"
   }
   use "lewis6991/gitsigns.nvim"
+  use "lukas-reineke/indent-blankline.nvim"
 
   if is_bootstrap then
     require('packer').sync()
