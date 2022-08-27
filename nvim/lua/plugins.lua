@@ -39,6 +39,7 @@ packer.startup(function(use)
     "neoclide/coc.nvim",
     branch = "release"
   }
+  use "lewis6991/gitsigns.nvim"
 
   if is_bootstrap then
     require('packer').sync()
