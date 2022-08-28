@@ -41,6 +41,7 @@ packer.startup(function(use)
   }
   use "lewis6991/gitsigns.nvim"
   use "lukas-reineke/indent-blankline.nvim"
+  use "numToStr/Comment.nvim"
 
   if is_bootstrap then
     require('packer').sync()
