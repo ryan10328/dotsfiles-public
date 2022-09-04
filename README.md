@@ -11,7 +11,11 @@ some nvim plugins.
 
 - Neovim >= 0.7
 
+## Starship
+
+It's a cross-shell prompt and fully customizable. For more detail please see the resource below.
+
 ## Resources
 
 - [craftzdog](https://github.com/craftzdog/dotfiles-public)
-
+- [starship](https://starship.rs)
