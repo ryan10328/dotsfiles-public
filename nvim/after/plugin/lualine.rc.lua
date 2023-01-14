@@ -1,12 +1,10 @@
 local status, lualine = pcall(require, 'lualine')
-
 if (not status) then return end
 
--- from craftzdog's dotsfile
 lualine.setup {
-   options = {
+  options = {
     icons_enabled = true,
-    theme = 'codedark',
+    theme = 'onedark',
     section_separators = { left = '', right = '' },
     component_separators = { left = '', right = '' },
     disabled_filetypes = {}
