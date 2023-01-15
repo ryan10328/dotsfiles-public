@@ -34,5 +34,4 @@ keymap.set('n', '<C-w><right>', '<C-w>>')
 keymap.set('n', '<C-w><up>', '<C-w>+')
 keymap.set('n', '<C-w><down>', '<C-w>-')
 
--- setup keymap of nvim-tree
-
+-- setup keymaps for NvimTree

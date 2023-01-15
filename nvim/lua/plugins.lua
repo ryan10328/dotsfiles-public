@@ -65,4 +65,7 @@ packer.startup(function(use)
     branch = 'main',
   }
 
+  use 'jose-elias-alvarez/null-ls.nvim'
+  use 'MunifTanjim/prettier.nvim'
+
 end)
