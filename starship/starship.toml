@@ -7,11 +7,9 @@ $directory\
 $git_branch\
 $git_status\
 [](fg:#FCA17D bg:#86BBD8)\
-$c\
 $elixir\
 $elm\
 $golang\
-$haskell\
 $java\
 $julia\
 $nodejs\
@@ -22,10 +20,17 @@ $docker_context\
 [](fg:#06969A bg:#33658A)\
 $time\
 [ ](fg:#33658A)\
+$line_break\
+$character\
 """
 
+
+
 # Disable the blank line at the start of the prompt
-# add_newline = false
+add_newline = true
+
+[character]
+success_symbol = '[🚀](bold green)'
 
 # You can also replace your username with a neat symbol like  to save some space
 [username]
@@ -53,11 +58,6 @@ truncation_symbol = "…/"
 # So either put "Important Documents" before "Documents" or use the substituted version:
 # "Important  " = "  "
 
-[c]
-symbol = " "
-style = "bg:#86BBD8"
-format = '[ $symbol ($version) ]($style)'
-
 [docker_context]
 symbol = " "
 style = "bg:#06969A"
@@ -76,7 +76,7 @@ format = '[ $symbol ($version) ]($style)'
 [git_branch]
 symbol = ""
 style = "bg:#FCA17D"
-format = '[ $symbol $branch ]($style)'
+format = '[ 🌱 $branch ]($style)'
 
 [git_status]
 style = "bg:#FCA17D"
@@ -84,11 +84,6 @@ format = '[$all_status$ahead_behind ]($style)'
 
 [golang]
 symbol = " "
-style = "bg:#86BBD8"
-format = '[ $symbol ($version) ]($style)'
-
-[haskell]
-symbol = " "
 style = "bg:#86BBD8"
 format = '[ $symbol ($version) ]($style)'
 
@@ -121,4 +116,7 @@ format = '[ $symbol ($version) ]($style)'
 disabled = false
 time_format = "%R" # Hour:Minute Format
 style = "bg:#33658A"
-format = '[ 🔥 $time ]($style)'
+format = '[ 🕒 $time ]($style)'
+
+[custom]
+ignore_timeout = true
