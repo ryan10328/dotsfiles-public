@@ -6,12 +6,21 @@ lspsaga.setup {
 }
 
 local options = { noremap = true, silent = true }
-
--- shorcut of keymap
 local keymap = vim.keymap.set
-keymap('n', '<Space>j', '<Cmd>Lspsaga diagnostic_jump_next<CR>', options)
-keymap('n', 'K', '<Cmd>Lspsaga hover_doc<CR>', options)
-keymap('n', 'gd', '<Cmd>Lspsaga lsp_finder<CR>', options)
-keymap('n', '<Space>k', '<Cmd>Lspsaga signature_help<CR>', options)
-keymap('n', 'gp', '<Cmd>Lspsaga preview_definition<CR>', options)
-keymap('n', 'gr', '<Cmd>Lspsaga rename<CR>', options)
+
+keymap('n', 'gh', '<cmd>Lspsaga lsp_finder<cr>', options)
+keymap({'n', 'v'}, '<leader>ca', '<cmd>Lspsaga code_action<cr>', options)
+keymap('n', 'gr', '<cmd>Lspsaga rename<cr>', options)
+
+keymap('n', 'gd', '<cmd>Lspsaga peek_definition<cr>', options)
+keymap('n', 'gd', '<cmd>Lspsaga goto_definition<cr>', options)
+keymap('n', '<leader>o', '<cmd>Lspsaga outline<cr>', options)
+
+keymap('n', 'K', '<cmd>Lspsaga hover_doc<cr>', options)
+keymap('n', 'K', '<cmd>Lspsaga hover_doc ++keep<cr>', options)
+
+keymap('n', '<leader>sl', '<cmd>Lspsaga show_line_diagnostics<cr>', options)
+keymap('n', '<leader>sc', '<cmd>Lspsaga show_cursor_diagnostics<cr>', options)
+keymap('n', '<leader>sb', '<cmd>Lspsaga show_buf_diagnostics<cr>', options)
+keymap('n', '[e', '<cmd>Lspsaga diagnostics_jump_prev<cr>', options)
+keymap('n', ']e', '<cmd>Lspsaga diagnostics_jump_next<cr>', options)
