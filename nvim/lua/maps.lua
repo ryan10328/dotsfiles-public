@@ -33,6 +33,3 @@ keymap.set('n', '<C-w><left>', '<C-w><')
 keymap.set('n', '<C-w><right>', '<C-w>>')
 keymap.set('n', '<C-w><up>', '<C-w>+')
 keymap.set('n', '<C-w><down>', '<C-w>-')
-
--- setup nvim.tree keymaps
-keymap.set('n', ';t', ':NvimTreeToggle<CR>', { silent = true })
