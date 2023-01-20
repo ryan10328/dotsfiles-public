@@ -4,6 +4,8 @@ Hi everyone... I'm Ryan. I started my neovim journey since late 2021. I was insp
 
 ## neovim
 
+![alt nvim-screen](./assets/nvim-screen-capture.png)
+
 ### configs folder structure
 
 - `.config`
