@@ -6,9 +6,6 @@ nvim_tree.setup({
     adaptive_size = true,
     number = true,
   },
-  float = {
-    enable = true,
-  }
 })
 
 local keymap = vim.keymap
