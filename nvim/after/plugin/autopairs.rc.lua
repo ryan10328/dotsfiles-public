@@ -3,7 +3,7 @@ if (not status) then return end
 
 autopairs.setup {
   disable_filetype = {
-    'NvimTree',
+    'neo-tree',
     'TelescopePrompt',
     'vim',
   }
