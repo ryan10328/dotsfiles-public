@@ -9,13 +9,19 @@ vim.cmd [[packadd packer.nvim]]
 packer.startup(function(use)
   use 'wbthomason/packer.nvim'
 
-  -- nvim tree
   use {
-    'nvim-tree/nvim-tree.lua',
+    'nvim-neo-tree/neo-tree.nvim',
+    branch = 'v2.x',
     requires = {
-      'nvim-tree/nvim-web-devicons'
-    },
-    tag = 'nightly' -- it's optional, updated every week
+      'nvim-lua/plenary.nvim',
+      'nvim-tree/nvim-web-devicons',
+      'MunifTanjim/nui.nvim',
+    }
+  }
+
+  use {
+    's1n7ax/nvim-window-picker',
+    tag = 'v1.*',
   }
 
   -- onedarkpro colorscheme
