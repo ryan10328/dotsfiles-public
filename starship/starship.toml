@@ -28,6 +28,7 @@ $character\
 
 # Disable the blank line at the start of the prompt
 add_newline = true
+command_timeout = 2500
 
 [character]
 success_symbol = '[🚀](bold green)'
@@ -117,6 +118,3 @@ disabled = false
 time_format = "%R" # Hour:Minute Format
 style = "bg:#33658A"
 format = '[ 🕒 $time ]($style)'
-
-[custom]
-ignore_timeout = true
