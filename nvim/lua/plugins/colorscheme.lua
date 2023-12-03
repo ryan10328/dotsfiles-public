@@ -5,7 +5,11 @@ return {
     name = "onedark",
     priority = 1000,
     opts = {
-      style = "darker",
+      style = "warmer",
+      transparent = true,
+      lualine = {
+        transparent = true,
+      },
     },
   },
   {
