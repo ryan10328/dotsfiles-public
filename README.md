@@ -1,8 +1,8 @@
 # Ryan's dotsfiles
 
-## NvChad
+## LazyVim
 
-I move to NvChad and use it as my primary vim editor. NvChad has a lot of features. It exposes customizable configs you can define it yourself. If you want to use my config. You should read the NvChad's documentation first.
+Migrate config to LazyVim since it's easy customizable.
 
 ## starship
 
@@ -14,4 +14,4 @@ install & setup.
 
 - [craftzdog](https://github.com/craftzdog/dotfiles-public)
 - [starship](https://starship.rs)
-- [NvChad](https://nvchad.com)
+- [LazyVim](https://www.lazyvim.org)
