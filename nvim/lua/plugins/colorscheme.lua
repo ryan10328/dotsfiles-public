@@ -6,10 +6,6 @@ return {
     priority = 1000,
     opts = {
       style = "warmer",
-      transparent = true,
-      lualine = {
-        transparent = true,
-      },
     },
   },
   {
