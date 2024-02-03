@@ -59,7 +59,6 @@ Alpine = ""
 Amazon = ""
 Android = ""
 Arch = "󰣇"
-Artix = "󰣇"
 CentOS = ""
 Debian = "󰣚"
 Redhat = "󱄛"
@@ -75,7 +74,7 @@ format = '[ $user ]($style)'
 style = "fg:color_fg0 bg:color_yellow"
 format = "[ $path ]($style)"
 truncation_length = 1
-truncation_symbol = "~/"
+truncation_symbol = ".../"
 
 [directory.substitutions]
 "Documents" = "󰈙 "
@@ -85,7 +84,7 @@ truncation_symbol = "~/"
 "Developer" = "󰲋 "
 
 [git_branch]
-symbol = ""
+symbol = "🌱"
 style = "bg:color_aqua"
 format = '[[ $symbol $branch ](fg:color_fg0 bg:color_aqua)]($style)'
 
@@ -145,9 +144,9 @@ format = '[[ $symbol( $context) ](fg:#83a598 bg:color_bg3)]($style)'
 
 [time]
 disabled = false
-time_format = "%T"
+time_format = "%R"
 style = "bg:color_bg1"
-format = '[[   $time ](fg:color_fg0 bg:color_bg1)]($style)'
+format = '[[ 🕛 $time ](fg:color_fg0 bg:color_bg1)]($style)'
 
 [line_break]
 disabled = false
