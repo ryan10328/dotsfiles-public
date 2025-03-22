@@ -1,9 +1,10 @@
 {
   "extras": [
-    "lazyvim.plugins.extras.lang.rust"
+
   ],
+  "install_version": 7,
   "news": {
-    "NEWS.md": "6707"
+    "NEWS.md": "10960"
   },
-  "version": 6
+  "version": 8
 }

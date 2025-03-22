@@ -1,11 +1,15 @@
 return {
   {
     "navarasu/onedark.nvim",
-    lazy = true,
     name = "onedark",
+    lazy = false,
     priority = 1000,
     opts = {
-      style = "warmer",
+      transparent = true,
+      style = "darker",
+      lualine = {
+        transparent = true,
+      },
     },
   },
   {
