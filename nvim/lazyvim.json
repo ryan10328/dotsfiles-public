@@ -1,6 +1,7 @@
 {
   "extras": [
-    "lazyvim.plugins.extras.coding.mini-snippets"
+    "lazyvim.plugins.extras.lang.markdown",
+    "lazyvim.plugins.extras.lang.toml"
   ],
   "install_version": 7,
   "news": {
