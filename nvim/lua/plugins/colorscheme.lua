@@ -1,21 +1,19 @@
 return {
   {
-    "navarasu/onedark.nvim",
-    name = "onedark",
+    "scottmckendry/cyberdream.nvim",
+    name = "cyberdream",
     lazy = false,
     priority = 1000,
     opts = {
+      variant = "dark",
+      saturation = 0.9,
       transparent = true,
-      style = "deep",
-      lualine = {
-        transparent = true,
-      },
     },
   },
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "onedark",
+      colorscheme = "cyberdream",
     },
   },
 }
