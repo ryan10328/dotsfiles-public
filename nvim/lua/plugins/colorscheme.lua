@@ -1,23 +1,17 @@
 return {
   {
-    "AlexvZyl/nordic.nvim",
-    name = "nordic",
+    "navarasu/onedark.nvim",
+    name = "onedark",
     lazy = false,
     priority = 1000,
     opts = {
-      bright_border = true,
-      telescope = {
-        style = "classic",
-      },
-      noice = {
-        style = "classic",
-      },
+      style = "darker",
     },
   },
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "nordic",
+      colorscheme = "onedark",
     },
   },
 }
