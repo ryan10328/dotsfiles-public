@@ -1,19 +1,23 @@
 return {
   {
-    "scottmckendry/cyberdream.nvim",
-    name = "cyberdream",
+    "AlexvZyl/nordic.nvim",
+    name = "nordic",
     lazy = false,
     priority = 1000,
     opts = {
-      variant = "dark",
-      saturation = 0.9,
-      transparent = true,
+      bright_border = true,
+      telescope = {
+        style = "classic",
+      },
+      noice = {
+        style = "classic",
+      },
     },
   },
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "cyberdream",
+      colorscheme = "nordic",
     },
   },
 }
