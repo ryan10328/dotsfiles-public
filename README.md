@@ -14,9 +14,14 @@ install & setup.
 
 A terminal mutiplexer
 
+## ideavim
+
+Ideavim is a Vim engine for Jetbrains IDEs.
+
 ## Resources
 
 - [craftzdog](https://github.com/craftzdog/dotfiles-public)
 - [tmux](https://github.com/tmux/tmux)
+- [Ideavim](https://github.com/JetBrains/ideavim)
 - [starship](https://starship.rs)
 - [LazyVim](https://www.lazyvim.org)

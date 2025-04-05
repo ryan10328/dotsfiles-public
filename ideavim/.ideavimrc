@@ -1,0 +1,69 @@
+
+Plug 'vim-scripts/argtextobj.vim'
+Plug 'preservim/nerdtree'
+
+let mapleader = ' '
+
+" This is the ideavimrc setting comes from https://github.com/saaguero/ideavimrc/blob/master/.ideavimrc
+set history=1000
+set showmode
+set hlsearch
+set scrolloff=3
+set ignorecase smartcase
+set ideajoin
+set number relativenumber
+set clipboard+=unnamed
+
+" easy system clipboard copy/paste
+noremap <space>y "*y
+noremap <space>Y "*Y
+noremap <space>p "*p
+noremap <space>P "*P
+
+" exit highlight search
+nnoremap <esc><esc> :nohlsearch<cr>
+
+" easy window navigation
+nnoremap <c-l> <c-w>l
+nnoremap <c-j> <c-w>j
+nnoremap <c-h> <c-w>h
+nnoremap <c-k> <c-w>k
+
+" navigate between tabs
+nnoremap <S-l> gt 
+nnoremap <S-h> gT 
+
+" Select all
+nnoremap <C-a> gg<S-v>G
+
+nnoremap <leader>gI :action GotoImplementation<cr>
+nnoremap <leader>gD :action GotoDeclaration<cr>
+nnoremap <leader>gd :action GotoDeclaration<cr>
+nnoremap <leader>gy :action GotoTypeDeclaration<cr>
+nnoremap <leader>gr :action FindUsages<cr>
+
+" git annotate
+nnoremap <leader>ga :action Annotate<cr>
+
+" code editing
+nnoremap <leader>ca :action ShowIntentionActions<cr>
+nnoremap <leader>cf :action ReformatCode<cr>
+nnoremap <leader>cr :action RenameElement<cr>
+
+" cannot use gcc because ideavim not support
+nnoremap <leader>cc :action CommentByLineComment<cr>
+
+" explorer
+nnoremap <leader>e :NERDTreeToggle<cr>:action EditSource<cr>
+
+" pane
+nnoremap <C-a>\ :action SplitVertically<cr>
+nnoremap <C-a>- :action SplitHorizontally<cr>
+
+
+if has('ide')
+    if &ide =~? 'rider'
+      " put some rider-only mapping here
+    else if &ide =~? 'webstorm'
+    endif
+endif
