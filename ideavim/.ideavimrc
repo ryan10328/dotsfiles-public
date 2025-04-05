@@ -1,5 +1,3 @@
-
-Plug 'vim-scripts/argtextobj.vim'
 Plug 'preservim/nerdtree'
 
 let mapleader = ' '
@@ -13,6 +11,7 @@ set ignorecase smartcase
 set ideajoin
 set number relativenumber
 set clipboard+=unnamed
+set mini-ai
 
 " easy system clipboard copy/paste
 noremap <space>y "*y
@@ -30,8 +29,8 @@ nnoremap <c-h> <c-w>h
 nnoremap <c-k> <c-w>k
 
 " navigate between tabs
-nnoremap <S-l> gt 
-nnoremap <S-h> gT 
+nnoremap <S-l> gt
+nnoremap <S-h> gT
 
 " Select all
 nnoremap <C-a> gg<S-v>G
@@ -55,6 +54,8 @@ nnoremap <leader>cc :action CommentByLineComment<cr>
 
 " explorer
 nnoremap <leader>e :NERDTreeToggle<cr>:action EditSource<cr>
+nnoremap <leader><leader> :action SearchEverywhere<cr>
+nnoremap <leader>ff :action FindInPath<cr>
 
 " pane
 nnoremap <C-a>\ :action SplitVertically<cr>
