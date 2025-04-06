@@ -51,6 +51,8 @@ nnoremap <leader>cr :action RenameElement<cr>
 
 " cannot use gcc because ideavim not support
 nnoremap <leader>cc :action CommentByLineComment<cr>
+nnoremap <leader>bd :action CloseContent<cr>
+nnoremap <leader>bo :action CloseAllEditorsButActive<cr>
 
 " explorer
 nnoremap <leader>e :NERDTreeToggle<cr>:action EditSource<cr>
