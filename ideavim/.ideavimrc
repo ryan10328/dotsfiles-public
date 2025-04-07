@@ -47,6 +47,7 @@ nnoremap <leader>ga :action Annotate<cr>
 " code editing
 nnoremap <leader>ca :action ShowIntentionActions<cr>
 nnoremap <leader>cf :action ReformatCode<cr>
+vnoremap <leader>cf :action ReformatCode<cr>
 nnoremap <leader>cr :action RenameElement<cr>
 
 " cannot use gcc because ideavim not support
