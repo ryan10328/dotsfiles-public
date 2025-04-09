@@ -7,6 +7,7 @@ return {
     opts = {
       theme = "wave",
       undercurl = false,
+      transparent = true,
       background = {
         dark = "wave",
         light = "lotus",
