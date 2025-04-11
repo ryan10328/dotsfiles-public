@@ -98,4 +98,7 @@ tags
 # Ignore code-workspaces
 *.code-workspace
 
+# Ignore tmux plugin folder
+tmux/plugins/*
+
 # End of https://www.toptal.com/developers/gitignore/api/lua,vim,powershell,visualstudiocode
