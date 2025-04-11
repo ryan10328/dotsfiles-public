@@ -1,20 +1,26 @@
 return {
-  {
-    "christoomey/vim-tmux-navigator",
-    cmd = {
-      "TmuxNavigateLeft",
-      "TmuxNavigateDown",
-      "TmuxNavigateUp",
-      "TmuxNavigateRight",
-      "TmuxNavigatePrevious",
-      "TmuxNavigatorProcessList",
+  "alexghergh/nvim-tmux-navigation",
+  keys = {
+    {
+      "<C-h>",
+      "<Cmd>NvimTmuxNavigateLeft<cr>",
+      desc = "Navigate left",
     },
-    keys = {
-      { "<c-h>", "<cmd><C-U>TmuxNavigateLeft<cr>" },
-      { "<c-j>", "<cmd><C-U>TmuxNavigateDown<cr>" },
-      { "<c-k>", "<cmd><C-U>TmuxNavigateUp<cr>" },
-      { "<c-l>", "<cmd><C-U>TmuxNavigateRight<cr>" },
-      { "<c-\\>", "<cmd><C-U>TmuxNavigatePrevious<cr>" },
+    {
+      "<C-j>",
+      "<Cmd>NvimTmuxNavigateDown<cr>",
+      desc = "Navigate down",
+    },
+    {
+      "<C-k>",
+      "<Cmd>NvimTmuxNavigateUp<cr>",
+      desc = "Navigate up",
+    },
+    {
+      "<C-l>",
+      "<Cmd>NvimTmuxNavigateRight<cr>",
+      desc = "Navigate right",
     },
   },
+  config = true,
 }
