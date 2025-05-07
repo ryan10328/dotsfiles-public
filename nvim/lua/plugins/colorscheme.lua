@@ -1,17 +1,17 @@
 return {
   {
-    "navarasu/onedark.nvim",
-    name = "onedark",
+    "ribru17/bamboo.nvim",
+    lazy = false,
     priority = 1000,
+    name = "bamboo",
     opts = {
-      style = "warmer",
       transparent = true,
     },
   },
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "onedark",
+      colorscheme = "bamboo",
     },
   },
 }
