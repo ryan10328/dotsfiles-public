@@ -5,7 +5,8 @@ return {
     priority = 1000,
     name = "bamboo",
     opts = {
-      transparent = true,
+      style = "multiplex",
+      transparent = false,
     },
   },
   {
