@@ -51,6 +51,7 @@ vnoremap <leader>cf :action ReformatCode<cr>
 nnoremap <leader>cr :action RenameElement<cr>
 nnoremap <leader>cR :action Refactorings.QuickListPopupAction<cr>
 vnoremap <leader>cR :action Refactorings.QuickListPopupAction<cr>
+vnoremap <leader>cw :action Editor.SelectWord<cr>
 
 " cannot use gcc because ideavim not support
 nnoremap <leader>cc :action CommentByLineComment<cr>
