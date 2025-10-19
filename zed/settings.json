@@ -23,7 +23,7 @@
   "base_keymap": "JetBrains",
   "ui_font_size": 17.0,
   "terminal": {
-    "font_size": 10.0,
+    "font_size": 16.0,
     "font_family": "CaskaydiaCove Nerd Font"
   },
   "buffer_font_features": {
