@@ -18,9 +18,9 @@
   "ui_font_family": ".ZedSans",
   "disable_ai": false,
   "buffer_font_family": "Cascadia Code",
-  "icon_theme": "Catppuccin Frappé",
-  "relative_line_numbers": true,
-  "base_keymap": "JetBrains",
+  "icon_theme": "Material Icon Theme",
+  "relative_line_numbers": "enabled",
+  "base_keymap": "VSCode",
   "ui_font_size": 17.0,
   "terminal": {
     "font_size": 16.0,
@@ -29,10 +29,6 @@
   "buffer_font_features": {
     "calt": true
   },
-  "theme": {
-    "mode": "dark",
-    "dark": "One Dark Pro",
-    "light": "One Light"
-  },
+  "theme": "Nightfox - blurred",
   "vim_mode": true
 }
