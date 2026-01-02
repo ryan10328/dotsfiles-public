@@ -11,9 +11,9 @@
     "default_profile": "ask",
     "default_model": {
       "provider": "copilot_chat",
-      "model": "gpt-4.1"
+      "model": "gpt-4.1",
     },
-    "model_parameters": []
+    "model_parameters": [],
   },
   "ui_font_family": ".ZedSans",
   "disable_ai": false,
@@ -24,11 +24,14 @@
   "ui_font_size": 17.0,
   "terminal": {
     "font_size": 16.0,
-    "font_family": "CaskaydiaCove Nerd Font"
+    "font_family": "CaskaydiaCove Nerd Font",
   },
   "buffer_font_features": {
-    "calt": true
+    "calt": true,
   },
   "theme": "One Dark - Darkened",
-  "vim_mode": true
+  "tabs": {
+    "file_icons": true,
+  },
+  "vim_mode": true,
 }
