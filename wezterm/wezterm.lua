@@ -5,7 +5,9 @@ config.initial_cols = 120
 config.initial_rows = 30
 config.font_size = 17.0
 config.line_height = 1.2
-config.window_background_opacity = 0.9
+config.window_background_opacity = 0.7
+config.macos_window_background_blur = 20
+
 config.color_scheme = "Bamboo"
 config.font = wezterm.font_with_fallback({
 	"CaskaydiaCove Nerd Font",
