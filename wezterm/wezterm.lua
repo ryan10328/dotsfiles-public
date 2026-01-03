@@ -1,12 +1,21 @@
 local wezterm = require("wezterm")
 local config = wezterm.config_builder()
 
+local is_mac = wezterm.target_triple:find("apple") ~= nil
+local is_win = wezterm.target_triple:find("windows") ~= nil
+
 config.initial_cols = 120
 config.initial_rows = 30
 config.font_size = 17.0
 config.line_height = 1.2
-config.window_background_opacity = 0.7
-config.macos_window_background_blur = 20
+
+if is_mac then
+	config.window_background_opacity = 0.6
+	config.macos_window_background_blur = 20
+elseif is_win then
+	config.window_background_opacity = 0.7
+	config.win32_system_backdrop = "Acrylic"
+end
 
 config.color_scheme = "Bamboo"
 config.font = wezterm.font_with_fallback({
