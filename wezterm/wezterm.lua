@@ -1,13 +1,12 @@
 local wezterm = require("wezterm")
 local config = wezterm.config_builder()
+local is_mac = require("utils.platform").is_mac
+local is_win = require("utils.platform").is_win
 
 config.initial_cols = 120
 config.initial_rows = 30
 config.font_size = 17.0
 config.line_height = 1.2
-
-local is_mac = require("utils.platform").is_mac
-local is_win = require("utils.platform").is_win
 
 if is_mac then
 	config.window_background_opacity = 0.6
@@ -18,15 +17,14 @@ elseif is_win then
 end
 
 config.color_scheme = "Bamboo"
-config.font = wezterm.font_with_fallback({
-	"CaskaydiaCove Nerd Font",
-	"Cascadia Code",
-})
-
 config.colors = {
 	cursor_bg = "white",
 	cursor_border = "white",
 }
+config.font = wezterm.font_with_fallback({
+	"CaskaydiaCove Nerd Font",
+	"Cascadia Code",
+})
 
 config.window_decorations = "RESIZE"
 config.prefer_egl = true
